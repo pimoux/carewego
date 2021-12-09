@@ -14,6 +14,7 @@
 		7FD13CA127623E1300AEDDA4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CA027623E1300AEDDA4 /* Colors.swift */; };
 		7FD13CA8276246B700AEDDA4 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CA7276246B700AEDDA4 /* Enumerations.swift */; };
 		7FD13CAA276246C200AEDDA4 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CA9276246C200AEDDA4 /* Structures.swift */; };
+		7FD13CAE27624D2A00AEDDA4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CAD27624D2A00AEDDA4 /* Database.swift */; };
 		7FEE6FD22762355400F0688D /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD12762355400F0688D /* Feed.swift */; };
 		7FEE6FD42762357E00F0688D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD32762357E00F0688D /* Profile.swift */; };
 		7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD52762359700F0688D /* GridDestinations.swift */; };
@@ -29,6 +30,7 @@
 		7FD13CA027623E1300AEDDA4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7FD13CA7276246B700AEDDA4 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		7FD13CA9276246C200AEDDA4 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		7FD13CAD27624D2A00AEDDA4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		7FEE6FD12762355400F0688D /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		7FEE6FD32762357E00F0688D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7FEE6FD52762359700F0688D /* GridDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDestinations.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				7FD13CA027623E1300AEDDA4 /* Colors.swift */,
 				7FD13CA7276246B700AEDDA4 /* Enumerations.swift */,
 				7FD13CA9276246C200AEDDA4 /* Structures.swift */,
+				7FD13CAD27624D2A00AEDDA4 /* Database.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				7FEE6FD8276235C700F0688D /* LocationMap.swift in Sources */,
 				7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */,
 				7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */,
+				7FD13CAE27624D2A00AEDDA4 /* Database.swift in Sources */,
 				7FD13CA8276246B700AEDDA4 /* Enumerations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
