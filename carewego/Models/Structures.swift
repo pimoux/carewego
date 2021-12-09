@@ -52,6 +52,6 @@ struct Service: Identifiable {
     var location: Location
     var type: SearchServiceType
     var horaires: String
-    var abilities: [Handicap]
+    var handicapAbilities: [Handicap]
     var rate: Double
 }

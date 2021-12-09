@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F724C672762AECF009904BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F724C662762AECF009904BC /* Extensions.swift */; };
 		7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC230E2760BD0B0066CEC8 /* carewegoApp.swift */; };
 		7FBC23112760BD0B0066CEC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC23102760BD0B0066CEC8 /* ContentView.swift */; };
 		7FBC23132760BD0C0066CEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC23122760BD0C0066CEC8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F724C662762AECF009904BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7FBC230B2760BD0B0066CEC8 /* carewego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carewego.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBC230E2760BD0B0066CEC8 /* carewegoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carewegoApp.swift; sourceTree = "<group>"; };
 		7FBC23102760BD0B0066CEC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				7FD13CA7276246B700AEDDA4 /* Enumerations.swift */,
 				7FD13CA9276246C200AEDDA4 /* Structures.swift */,
 				7FD13CAD27624D2A00AEDDA4 /* Database.swift */,
+				7F724C662762AECF009904BC /* Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */,
 				7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */,
 				7FD13CAE27624D2A00AEDDA4 /* Database.swift in Sources */,
+				7F724C672762AECF009904BC /* Extensions.swift in Sources */,
 				7FD13CA8276246B700AEDDA4 /* Enumerations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
