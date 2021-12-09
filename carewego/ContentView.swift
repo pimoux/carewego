@@ -7,10 +7,30 @@
 
 import SwiftUI
 
+//test truc déroulant date
+
 struct ContentView: View {
+    
     var body: some View {
-        Text("C un test")
-            .padding()
+        TabView {
+            Feed()
+                .tabItem {
+                    Image(systemName: "line.3.horizontal.circle.fill")
+                }
+            GridDestinations()
+                .tabItem {
+                    Image(systemName: "rectangle.grid.2x2.fill")
+                }
+            Profile()
+                .tabItem {
+                    Image(systemName: "person.circle.fill")
+                }
+            LocationMap()
+                .tabItem {
+                    Image(systemName: "location.square.fill")
+                }
+        }
+        .accentColor(colorPrimary)
     }
 }
 
