@@ -77,6 +77,16 @@ var user7: User = User(
     savedUsers: [user4, user2]
 )
 
+var currentUser: User = User(
+    id: UUID(),
+    username: "Hugo Ribaud",
+    avatar: "hugoRibaud",
+    isProfessionnal: false,
+    handicaps: [.fauteuil, .autoimmune],
+    savedPosts: [post1, post2],
+    savedUsers: [user4]
+)
+
 var post1: Post = Post(
     id: UUID(),
     user: user3,
