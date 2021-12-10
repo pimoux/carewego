@@ -161,12 +161,16 @@ var comment4: Comment = Comment(
     content: "Service restauration qui laisse à désirer. Nous avons attendu 30 minutes sans avoir été servi et sans avoir pris notre commande ! Une honte pour un établissement de ce standard."
 )
 
-var location1: Location = Location(id: UUID(), type: .ville, name: "San Francisco", image: "sf")
-var location2: Location = Location(id: UUID(), type: .ville, name: "Ubud", image: "ubud")
-var location3: Location = Location(id: UUID(), type: .ville, name: "Cancun", image: "cancun")
-var location4: Location = Location(id: UUID(), type: .ville, name: "Cannes", image: "cannes")
-var location5: Location = Location(id: UUID(), type: .ville, name: "Ibiza", image: "ibiza")
-var location6: Location = Location(id: UUID(), type: .ville, name: "Istanbul", image: "istanbul")
+var location1: Location = Location(id: UUID(), type: .ville, name: "San Francisco", image: "sanfranciscotest")
+var location2: Location = Location(id: UUID(), type: .ville, name: "Ubud", image: "ubudtest")
+var location3: Location = Location(id: UUID(), type: .ville, name: "Cancun", image: "cancuntest")
+var location4: Location = Location(id: UUID(), type: .ville, name: "Cannes", image: "cannestest")
+var location5: Location = Location(id: UUID(), type: .ville, name: "Ibiza", image: "ibizatest")
+var location6: Location = Location(id: UUID(), type: .ville, name: "Istanbul", image: "istanbultest")
+var location7: Location = Location(id: UUID(), type: .ville, name: "Maldives", image: "maldivestest")
+var location8: Location = Location(id: UUID(), type: .ville, name: "Sydney", image: "sydneytest")
+var location9: Location = Location(id: UUID(), type: .ville, name: "Petra", image: "petratest")
+var location10: Location = Location(id: UUID(), type: .ville, name: "Shanghai", image: "shanghaitest")
 
 var service1: Service = Service(
     id: UUID(),
@@ -174,7 +178,6 @@ var service1: Service = Service(
     images: ["sunhotel1", "sunhotel2", "sunHotel3"],
     location: location5,
     type: .hotel,
-    horaires: "24h/24 7j/7",
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 3
 )
@@ -185,7 +188,6 @@ var service2: Service = Service(
     images: ["bienetre1"],
     location: location5,
     type: .bienEtre,
-    horaires: "24h/24 7j/7",
     handicapAbilities: [.malentendant, .autoimmune, .cardiaque],
     rate: 4
 )
@@ -196,7 +198,6 @@ var service3: Service = Service(
     images: ["transport"],
     location: location5,
     type: .transport,
-    horaires: "24h/24 7j/7",
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 5
 )
@@ -207,7 +208,6 @@ var service4: Service = Service(
     images: ["santé"],
     location: location5,
     type: .sante,
-    horaires: "24h/24 7j/7",
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .cardiaque, .autoimmune, .béquilles],
     rate: 5
 )
@@ -218,7 +218,6 @@ var service5: Service = Service(
     images: ["aideDomicile"],
     location: location5,
     type: .aideDomicile,
-    horaires: "24h/24 7j/7",
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 3
 )
@@ -229,7 +228,13 @@ var service6: Service = Service(
     images: ["sejour"],
     location: location5,
     type: .sejour,
-    horaires: "24h/24 7j/7",
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 2
 )
+
+var message1: Message = Message(id: UUID(), user: user1, isLatestMessageSeen: false, latestMessage: "3 nouveaux messages")
+var message2: Message = Message(id: UUID(), user: user2, isLatestMessageSeen: true, latestMessage: "Je confirme le rendez vous")
+var message3: Message = Message(id: UUID(), user: user3, isLatestMessageSeen: true, latestMessage: "Ce voyage était super !")
+var message4: Message = Message(id: UUID(), user: user4, isLatestMessageSeen: true, latestMessage: "En ligne")
+var message5: Message = Message(id: UUID(), user: user5, isLatestMessageSeen: true, latestMessage: "Bonne journée ! Il y a 4j")
+var message6: Message = Message(id: UUID(), user: user6, isLatestMessageSeen: true, latestMessage: "En ligne il y a 2h")

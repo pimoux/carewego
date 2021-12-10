@@ -20,6 +20,8 @@
 		7FEE6FD42762357E00F0688D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD32762357E00F0688D /* Profile.swift */; };
 		7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD52762359700F0688D /* GridDestinations.swift */; };
 		7FEE6FD8276235C700F0688D /* LocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD7276235C700F0688D /* LocationMap.swift */; };
+		7FF2B635276352190081CB17 /* SearchLocationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2B634276352190081CB17 /* SearchLocationModal.swift */; };
+		7FF2B6372763595A0081CB17 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2B6362763595A0081CB17 /* LocationItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		7FEE6FD32762357E00F0688D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7FEE6FD52762359700F0688D /* GridDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDestinations.swift; sourceTree = "<group>"; };
 		7FEE6FD7276235C700F0688D /* LocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMap.swift; sourceTree = "<group>"; };
+		7FF2B634276352190081CB17 /* SearchLocationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationModal.swift; sourceTree = "<group>"; };
+		7FF2B6362763595A0081CB17 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F73EA98276345E6000DF03A /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				7FF2B634276352190081CB17 /* SearchLocationModal.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		7FBC23022760BD0B0066CEC8 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +81,7 @@
 		7FBC230D2760BD0B0066CEC8 /* carewego */ = {
 			isa = PBXGroup;
 			children = (
+				7F73EA98276345E6000DF03A /* Modals */,
 				7FD13CA6276246AA00AEDDA4 /* Models */,
 				7FD13CA327623F6300AEDDA4 /* Components */,
 				7FEE6FD7276235C700F0688D /* LocationMap.swift */,
@@ -94,6 +107,7 @@
 		7FD13CA327623F6300AEDDA4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				7FF2B6362763595A0081CB17 /* LocationItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -183,7 +197,9 @@
 				7FBC23112760BD0B0066CEC8 /* ContentView.swift in Sources */,
 				7FD13CAA276246C200AEDDA4 /* Structures.swift in Sources */,
 				7FEE6FD42762357E00F0688D /* Profile.swift in Sources */,
+				7FF2B6372763595A0081CB17 /* LocationItem.swift in Sources */,
 				7FEE6FD22762355400F0688D /* Feed.swift in Sources */,
+				7FF2B635276352190081CB17 /* SearchLocationModal.swift in Sources */,
 				7FD13CA127623E1300AEDDA4 /* Colors.swift in Sources */,
 				7FEE6FD8276235C700F0688D /* LocationMap.swift in Sources */,
 				7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */,

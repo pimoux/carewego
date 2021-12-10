@@ -36,8 +36,16 @@ struct Post: Identifiable {
     var comments: Int
 }
 
+struct Message: Identifiable {
+    static let messages: [Message] = [message1, message2, message3, message4, message5, message6]
+    var id = UUID()
+    var user: User
+    var isLatestMessageSeen: Bool
+    var latestMessage: String
+}
+
 struct Location: Identifiable {
-    static let locations = [location1, location2, location3, location4, location5, location6]
+    static let locations = [location1, location2, location3, location4, location5, location6, location7, location8, location9, location10]
     var id = UUID()
     var type: SearchLocationType
     var name: String
@@ -51,7 +59,6 @@ struct Service: Identifiable {
     var images: [String]
     var location: Location
     var type: SearchServiceType
-    var horaires: String
     var handicapAbilities: [Handicap]
     var rate: Double
 }

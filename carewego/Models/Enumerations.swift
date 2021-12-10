@@ -8,7 +8,7 @@
 import Foundation
 
 enum Handicap {
-    case pulmonaire, cardiaque, autisme, autoimmune, grossesse, diabétique, troubleMentaux, malvoyant, malentendant, déambulateur, béquilles, fauteuil, fauteuilElectrique, fauteuilElectriquePliable
+    case pulmonaire, cardiaque, autisme, autoimmune, grossesse, diabète, troubleMentaux, malvoyant, malentendant, déambulateur, béquilles, fauteuil, fauteuilElectrique, fauteuilElectriquePliable
 }
 
 enum SearchLocationType {
