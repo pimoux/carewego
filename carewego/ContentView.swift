@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//test truc déroulant date
-
 struct ContentView: View {
     
     var body: some View {

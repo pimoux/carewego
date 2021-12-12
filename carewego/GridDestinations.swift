@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GridDestinations: View {
     
+    @State private var searchLocation: SearchLocationType = .ville
     @State private var searchCity: String = ""
     @State private var isOpen: Bool = false
     
@@ -21,7 +22,11 @@ struct GridDestinations: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Villes")
+                    Text(
+                        searchLocation.description == "Pays" ?
+                         searchLocation.description :
+                            "\(searchLocation.description)s"
+                    )
                         .font(.title)
                         .bold()
                         .padding(.leading, 4)
@@ -29,6 +34,7 @@ struct GridDestinations: View {
                     HStack {
                         Image(systemName: "magnifyingglass")
                         TextField("Search", text: $searchCity)
+                            .keyboardType(.default)
                     }
                     .padding(10)
                     .background(colorLightGrayField)
@@ -36,15 +42,18 @@ struct GridDestinations: View {
                     Spacer()
                     LazyVGrid(columns: gridLayout, spacing: 8) {
                         ForEach(Location.locations.filter({
-                            "\($0.name)".contains(searchCity) || searchCity.isEmpty
+                            ("\($0.name.lowercased())".contains(searchCity.lowercased()) ||
+                             searchCity.isEmpty) && searchLocation == $0.type
                         })) { location in
+                            NavigationLink(destination: GridServices(place: location.name)) {
                                 LocationItem(location: location)
+                            }
                         }
                     }
                     .padding(.vertical, 20)
                 }
                 .sheet(isPresented: $isOpen) {
-                    SearchLocationModal()
+                    SearchLocationModal(searchLocation: $searchLocation)
                 }
                 .navigationBarItems(trailing: Button(action: {
                     self.isOpen = true
@@ -55,6 +64,7 @@ struct GridDestinations: View {
                 .padding(20)
             }
         }
+        .accentColor(.black)
     }
 }
 

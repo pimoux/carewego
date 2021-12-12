@@ -13,6 +13,22 @@ enum Handicap {
 
 enum SearchLocationType {
     case ville, pays, continent
+    
+    var description: String {
+        switch self {
+        case .ville: return "Ville"
+        case .pays: return "Pays"
+        case .continent: return "Continent"
+        }
+    }
+    
+    var indexes: Int {
+        switch self {
+        case .ville: return 0
+        case .pays: return 1
+        case .continent: return 2
+        }
+    }
 }
 
 enum SearchServiceType {

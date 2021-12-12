@@ -161,43 +161,43 @@ var comment4: Comment = Comment(
     content: "Service restauration qui laisse à désirer. Nous avons attendu 30 minutes sans avoir été servi et sans avoir pris notre commande ! Une honte pour un établissement de ce standard."
 )
 
-var location1: Location = Location(id: UUID(), type: .ville, name: "San Francisco", image: "sanfranciscotest")
-var location2: Location = Location(id: UUID(), type: .ville, name: "Ubud", image: "ubudtest")
-var location3: Location = Location(id: UUID(), type: .ville, name: "Cancun", image: "cancuntest")
-var location4: Location = Location(id: UUID(), type: .ville, name: "Cannes", image: "cannestest")
-var location5: Location = Location(id: UUID(), type: .ville, name: "Ibiza", image: "ibizatest")
-var location6: Location = Location(id: UUID(), type: .ville, name: "Istanbul", image: "istanbultest")
-var location7: Location = Location(id: UUID(), type: .ville, name: "Maldives", image: "maldivestest")
-var location8: Location = Location(id: UUID(), type: .ville, name: "Sydney", image: "sydneytest")
-var location9: Location = Location(id: UUID(), type: .ville, name: "Petra", image: "petratest")
-var location10: Location = Location(id: UUID(), type: .ville, name: "Shanghai", image: "shanghaitest")
+var location1: Location = Location(id: UUID(), type: .ville, name: "San Francisco", image: "sanfrancisco")
+var location2: Location = Location(id: UUID(), type: .ville, name: "Ubud", image: "ubud")
+var location3: Location = Location(id: UUID(), type: .ville, name: "Cancun", image: "cancun")
+var location4: Location = Location(id: UUID(), type: .ville, name: "Cannes", image: "cannes")
+var location5: Location = Location(id: UUID(), type: .ville, name: "Ibiza", image: "ibiza")
+var location6: Location = Location(id: UUID(), type: .ville, name: "Istanbul", image: "istanbul")
+var location7: Location = Location(id: UUID(), type: .ville, name: "Maldives", image: "maldives")
+var location8: Location = Location(id: UUID(), type: .ville, name: "Sydney", image: "sydney")
+var location9: Location = Location(id: UUID(), type: .ville, name: "Petra", image: "petra")
+var location10: Location = Location(id: UUID(), type: .ville, name: "Shanghai", image: "shanghai")
 
 var service1: Service = Service(
     id: UUID(),
-    name: "hotel",
-    images: ["sunhotel1", "sunhotel2", "sunHotel3"],
+    name: "Transport",
+    images: ["transport"],
     location: location5,
-    type: .hotel,
+    type: .transport,
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 3
 )
 
 var service2: Service = Service(
     id: UUID(),
-    name: "Bien être",
-    images: ["bienetre1"],
+    name: "Hôtel",
+    images: ["Hotel"],
     location: location5,
-    type: .bienEtre,
+    type: .hotel,
     handicapAbilities: [.malentendant, .autoimmune, .cardiaque],
     rate: 4
 )
 
 var service3: Service = Service(
     id: UUID(),
-    name: "Transport",
-    images: ["transport"],
+    name: "Bien être",
+    images: ["Bienetre"],
     location: location5,
-    type: .transport,
+    type: .bienEtre,
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 5
 )
@@ -205,7 +205,7 @@ var service3: Service = Service(
 var service4: Service = Service(
     id: UUID(),
     name: "Santé",
-    images: ["santé"],
+    images: ["Sante"],
     location: location5,
     type: .sante,
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .cardiaque, .autoimmune, .béquilles],
@@ -215,7 +215,7 @@ var service4: Service = Service(
 var service5: Service = Service(
     id: UUID(),
     name: "Aide à domicile",
-    images: ["aideDomicile"],
+    images: ["Aide a domicile"],
     location: location5,
     type: .aideDomicile,
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
@@ -225,11 +225,32 @@ var service5: Service = Service(
 var service6: Service = Service(
     id: UUID(),
     name: "Séjour",
-    images: ["sejour"],
+    images: ["Sejour"],
     location: location5,
     type: .sejour,
     handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 2
+)
+
+var service7: Service = Service(
+    id: UUID(),
+    name: "Activités",
+    images: ["Activite"],
+    location: location6,
+    type: .activites,
+    handicapAbilities: [.grossesse, .diabète, .troubleMentaux],
+    rate: 4
+)
+
+
+var service8: Service = Service(
+    id: UUID(),
+    name: "Accompagnement",
+    images: ["Accompagnement"],
+    location: location7,
+    type: .accompagnement,
+    handicapAbilities: [.malvoyant,.autisme,.grossesse,.fauteuilElectrique,.cardiaque],
+    rate: 4
 )
 
 var message1: Message = Message(id: UUID(), user: user1, isLatestMessageSeen: false, latestMessage: "3 nouveaux messages")

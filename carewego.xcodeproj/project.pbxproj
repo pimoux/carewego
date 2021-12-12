@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7F724C672762AECF009904BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F724C662762AECF009904BC /* Extensions.swift */; };
+		7FB2A8402765485700D95770 /* GridServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2A83F2765485700D95770 /* GridServices.swift */; };
+		7FB2A8422765486900D95770 /* ServiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2A8412765486900D95770 /* ServiceItem.swift */; };
+		7FB2A844276549D500D95770 /* SearchServiceModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2A843276549D500D95770 /* SearchServiceModal.swift */; };
 		7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC230E2760BD0B0066CEC8 /* carewegoApp.swift */; };
 		7FBC23112760BD0B0066CEC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC23102760BD0B0066CEC8 /* ContentView.swift */; };
 		7FBC23132760BD0C0066CEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC23122760BD0C0066CEC8 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		7F724C662762AECF009904BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7FB2A83F2765485700D95770 /* GridServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridServices.swift; sourceTree = "<group>"; };
+		7FB2A8412765486900D95770 /* ServiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItem.swift; sourceTree = "<group>"; };
+		7FB2A843276549D500D95770 /* SearchServiceModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceModal.swift; sourceTree = "<group>"; };
 		7FBC230B2760BD0B0066CEC8 /* carewego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carewego.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBC230E2760BD0B0066CEC8 /* carewegoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carewegoApp.swift; sourceTree = "<group>"; };
 		7FBC23102760BD0B0066CEC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				7FF2B634276352190081CB17 /* SearchLocationModal.swift */,
+				7FB2A843276549D500D95770 /* SearchServiceModal.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -82,10 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				7F73EA98276345E6000DF03A /* Modals */,
-				7FD13CA6276246AA00AEDDA4 /* Models */,
 				7FD13CA327623F6300AEDDA4 /* Components */,
-				7FEE6FD7276235C700F0688D /* LocationMap.swift */,
+				7FD13CA6276246AA00AEDDA4 /* Models */,
+				7FB2A83F2765485700D95770 /* GridServices.swift */,
 				7FEE6FD52762359700F0688D /* GridDestinations.swift */,
+				7FEE6FD7276235C700F0688D /* LocationMap.swift */,
 				7FEE6FD12762355400F0688D /* Feed.swift */,
 				7FEE6FD32762357E00F0688D /* Profile.swift */,
 				7FBC23102760BD0B0066CEC8 /* ContentView.swift */,
@@ -108,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				7FF2B6362763595A0081CB17 /* LocationItem.swift */,
+				7FB2A8412765486900D95770 /* ServiceItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,10 +210,13 @@
 				7FEE6FD22762355400F0688D /* Feed.swift in Sources */,
 				7FF2B635276352190081CB17 /* SearchLocationModal.swift in Sources */,
 				7FD13CA127623E1300AEDDA4 /* Colors.swift in Sources */,
+				7FB2A844276549D500D95770 /* SearchServiceModal.swift in Sources */,
 				7FEE6FD8276235C700F0688D /* LocationMap.swift in Sources */,
 				7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */,
+				7FB2A8402765485700D95770 /* GridServices.swift in Sources */,
 				7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */,
 				7FD13CAE27624D2A00AEDDA4 /* Database.swift in Sources */,
+				7FB2A8422765486900D95770 /* ServiceItem.swift in Sources */,
 				7F724C672762AECF009904BC /* Extensions.swift in Sources */,
 				7FD13CA8276246B700AEDDA4 /* Enumerations.swift in Sources */,
 			);

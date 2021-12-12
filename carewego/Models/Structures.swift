@@ -53,7 +53,7 @@ struct Location: Identifiable {
 }
 
 struct Service: Identifiable {
-    static let services = [service1, service2, service3, service4, service5, service6]
+    static let services = [service1, service2, service3, service4, service5, service6, service7, service8]
     var id = UUID()
     var name: String
     var images: [String]
