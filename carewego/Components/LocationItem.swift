@@ -18,6 +18,7 @@ struct LocationItem: View {
                     VStack {
                         Spacer()
                         Text(location.name)
+                            .fontWeight(.bold)
                             .foregroundColor(.white)
                             .font(.title2)
                             .bold()

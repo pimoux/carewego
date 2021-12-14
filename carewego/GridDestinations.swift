@@ -24,19 +24,20 @@ struct GridDestinations: View {
                 VStack(alignment: .leading) {
                     Text(
                         searchLocation.description == "Pays" ?
-                         searchLocation.description :
+                        searchLocation.description :
                             "\(searchLocation.description)s"
                     )
                         .font(.title)
                         .bold()
-                        .padding(.leading, 4)
+                        .padding([.leading, .bottom], 1.0)
                         .navigationBarTitle("Recherche de destination", displayMode: .inline)
                     HStack {
                         Image(systemName: "magnifyingglass")
+                            .padding(.leading, 10)
                         TextField("Search", text: $searchCity)
                             .keyboardType(.default)
                     }
-                    .padding(10)
+                    .padding(.vertical, 10.0)
                     .background(colorLightGrayField)
                     .cornerRadius(8)
                     Spacer()

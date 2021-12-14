@@ -9,8 +9,11 @@ import SwiftUI
 
 struct GridServices: View {
     var place: String
+    
     @State private var searchCity: String = ""
     @State private var isOpen: Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var gridLayout: [GridItem] = [
         GridItem(.adaptive(minimum: 170)),
         GridItem(.adaptive(minimum: 170))
@@ -22,7 +25,7 @@ struct GridServices: View {
                         .font(.title)
                         .bold()
                         .padding(.leading, 4)
-                        .navigationBarTitle("Services disponible ", displayMode: .inline)
+                        .padding(.bottom, 1.0)
                     HStack {
                         Image(systemName: "magnifyingglass")
                         TextField("Search", text: $searchCity)
@@ -50,6 +53,15 @@ struct GridServices: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 20)
             }
+            .navigationBarTitle(Text("Services disponible"), displayMode: .inline)
+            .edgesIgnoringSafeArea(.bottom)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading:
+                                    Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Image(systemName: "arrow.uturn.backward")
+            })
     }
 }
 

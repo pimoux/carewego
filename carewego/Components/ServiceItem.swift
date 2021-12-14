@@ -20,7 +20,7 @@ struct ServiceItem: View {
                             Spacer()
                             Text(service.name)
                                 .foregroundColor(.white)
-                                .font(.title)
+                                .font(.title2)
                                 .bold()
                                 .background(Rectangle().fill().opacity(0.5))
                                 .frame(maxWidth: .infinity, alignment: .center)

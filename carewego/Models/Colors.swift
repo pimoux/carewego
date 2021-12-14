@@ -9,7 +9,7 @@ import SwiftUI
 
 //SHADOW
 
-var shadow: Color = Color(red: 194/255, green: 193/255, blue: 221/255)
+var shadowRectangle: Color = Color(red: 194/255, green: 193/255, blue: 221/255)
 
 //BG
 
