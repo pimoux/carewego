@@ -63,18 +63,8 @@ struct RectangleItem: View {
                             }
                         }
                     )
-                Button {
-                    print("test")
-                } label: {
-                    Text("Appeler (+971 334 060)")
-                        .fontWeight(.heavy)
-                        .padding(.horizontal, 30)
-                        .padding(.vertical, 10)
-                        .foregroundColor(.white)
-                        .background(colorPrimary)
-                        .cornerRadius(8)
-                }
-                .padding(.vertical)
+                CallService(numero: "+971 334 060", hospitalName: "Hospital Ibiza Playa")
+                    .padding(.vertical)
                 RoundedRectangle(cornerRadius: 16)
                     .fill(.white)
                     .frame(width: 380, height: 250, alignment: .center)
@@ -124,24 +114,11 @@ struct RectangleItem: View {
                                 }
                                 .padding(.leading, 35)
                                 .padding(.bottom)
-                                
                             }
-                            
                         }
-                        
                     )
-                Button {
-                    print("test")
-                } label: {
-                    Text("Appeler (+956 358 997)")
-                        .fontWeight(.heavy)
-                        .padding(.horizontal, 30)
-                        .padding(.vertical, 10)
-                        .foregroundColor(.white)
-                        .background(colorPrimary)
-                        .cornerRadius(8)
-                }
-                .padding(.top, 20)
+                CallService(numero: "+956 358 997", hospitalName: "Ibiza Medical Center")
+                    .padding(.vertical)
             }
         }
     }

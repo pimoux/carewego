@@ -166,6 +166,7 @@ struct Chat: View {
         }) {
             Image(systemName: "arrow.uturn.backward")
         })
+        .background(whiteBackground)
     }
 }
 

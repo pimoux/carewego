@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 extension Date {
     func timeAgo() -> String {
@@ -37,5 +38,15 @@ extension Date {
         }
         let diff = Calendar.current.dateComponents([.year], from: self, to: Date()).year ?? 0
         return "\(diff)y"
+    }
+}
+
+extension StringProtocol {
+    var firstCapitalized: String { return prefix(1).capitalized + dropFirst() }
+}
+
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
     }
 }

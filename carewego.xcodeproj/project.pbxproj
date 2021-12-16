@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0ADF69276A4247007E53AC /* SeaSideIbiza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0ADF68276A4247007E53AC /* SeaSideIbiza.swift */; };
 		7F19A5D827677DB800091CD6 /* MapHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A5D727677DB800091CD6 /* MapHeader.swift */; };
 		7F19A5DA27677E3400091CD6 /* MapSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A5D927677E3400091CD6 /* MapSuggestions.swift */; };
 		7F19A5DC2767811C00091CD6 /* MapModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A5DB2767811C00091CD6 /* MapModal.swift */; };
+		7F2E5C12276B656400BDEDAF /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E5C11276B656400BDEDAF /* Register.swift */; };
 		7F407E1B2767EA2600CE3709 /* RectangleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F407E1A2767EA2600CE3709 /* RectangleItem.swift */; };
 		7F43061A276793BE00D5A06A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F430619276793BE00D5A06A /* Chat.swift */; };
+		7F55A9B7276A37BF002A8181 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55A9B6276A37BF002A8181 /* Sheet.swift */; };
+		7F55A9B9276A3DA4002A8181 /* CallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55A9B8276A3DA4002A8181 /* CallService.swift */; };
 		7F6B894A2767CEEE0014770F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B89492767CEEE0014770F /* Place.swift */; };
 		7F6B894C2767CF2A0014770F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B894B2767CF2A0014770F /* MapView.swift */; };
 		7F6B894E2767CF560014770F /* MapDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B894D2767CF560014770F /* MapDisplay.swift */; };
 		7F6B89502767CF920014770F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B894F2767CF920014770F /* MapViewModel.swift */; };
 		7F724C672762AECF009904BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F724C662762AECF009904BC /* Extensions.swift */; };
+		7F8796C52769F20F00B3D9C7 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8796C42769F20F00B3D9C7 /* PostItem.swift */; };
+		7F927833276A01E4005EA2CB /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F927832276A01E4005EA2CB /* Description.swift */; };
+		7F927835276A15D8005EA2CB /* MessageIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F927834276A15D8005EA2CB /* MessageIcon.swift */; };
+		7F927837276A1CBB005EA2CB /* ProfessionnalPostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F927836276A1CBB005EA2CB /* ProfessionnalPostItem.swift */; };
+		7FA222062769DD5B00AA8A97 /* CommentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA222052769DD5B00AA8A97 /* CommentItem.swift */; };
 		7FB2A8402765485700D95770 /* GridServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2A83F2765485700D95770 /* GridServices.swift */; };
 		7FB2A8422765486900D95770 /* ServiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2A8412765486900D95770 /* ServiceItem.swift */; };
 		7FB2A844276549D500D95770 /* SearchServiceModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB2A843276549D500D95770 /* SearchServiceModal.swift */; };
+		7FB7DC2C276A75B000AE6DC7 /* SecondPostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB7DC2B276A75B000AE6DC7 /* SecondPostItem.swift */; };
 		7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC230E2760BD0B0066CEC8 /* carewegoApp.swift */; };
 		7FBC23112760BD0B0066CEC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC23102760BD0B0066CEC8 /* ContentView.swift */; };
 		7FBC23132760BD0C0066CEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC23122760BD0C0066CEC8 /* Assets.xcassets */; };
@@ -28,6 +38,7 @@
 		7FD13CA8276246B700AEDDA4 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CA7276246B700AEDDA4 /* Enumerations.swift */; };
 		7FD13CAA276246C200AEDDA4 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CA9276246C200AEDDA4 /* Structures.swift */; };
 		7FD13CAE27624D2A00AEDDA4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD13CAD27624D2A00AEDDA4 /* Database.swift */; };
+		7FE32C7B27695A0C006CC8D2 /* Avis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE32C7A27695A0B006CC8D2 /* Avis.swift */; };
 		7FEE6FD22762355400F0688D /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD12762355400F0688D /* Feed.swift */; };
 		7FEE6FD42762357E00F0688D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD32762357E00F0688D /* Profile.swift */; };
 		7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE6FD52762359700F0688D /* GridDestinations.swift */; };
@@ -37,19 +48,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0ADF68276A4247007E53AC /* SeaSideIbiza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSideIbiza.swift; sourceTree = "<group>"; };
 		7F19A5D727677DB800091CD6 /* MapHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeader.swift; sourceTree = "<group>"; };
 		7F19A5D927677E3400091CD6 /* MapSuggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSuggestions.swift; sourceTree = "<group>"; };
 		7F19A5DB2767811C00091CD6 /* MapModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModal.swift; sourceTree = "<group>"; };
+		7F2E5C11276B656400BDEDAF /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		7F407E1A2767EA2600CE3709 /* RectangleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleItem.swift; sourceTree = "<group>"; };
 		7F430619276793BE00D5A06A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		7F55A9B6276A37BF002A8181 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		7F55A9B8276A3DA4002A8181 /* CallService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallService.swift; sourceTree = "<group>"; };
 		7F6B89492767CEEE0014770F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		7F6B894B2767CF2A0014770F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		7F6B894D2767CF560014770F /* MapDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDisplay.swift; sourceTree = "<group>"; };
 		7F6B894F2767CF920014770F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		7F724C662762AECF009904BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7F8796C42769F20F00B3D9C7 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		7F927832276A01E4005EA2CB /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		7F927834276A15D8005EA2CB /* MessageIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIcon.swift; sourceTree = "<group>"; };
+		7F927836276A1CBB005EA2CB /* ProfessionnalPostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionnalPostItem.swift; sourceTree = "<group>"; };
+		7FA222052769DD5B00AA8A97 /* CommentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentItem.swift; sourceTree = "<group>"; };
 		7FB2A83F2765485700D95770 /* GridServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridServices.swift; sourceTree = "<group>"; };
 		7FB2A8412765486900D95770 /* ServiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItem.swift; sourceTree = "<group>"; };
 		7FB2A843276549D500D95770 /* SearchServiceModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceModal.swift; sourceTree = "<group>"; };
+		7FB7DC2B276A75B000AE6DC7 /* SecondPostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPostItem.swift; sourceTree = "<group>"; };
 		7FBC230B2760BD0B0066CEC8 /* carewego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carewego.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBC230E2760BD0B0066CEC8 /* carewegoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carewegoApp.swift; sourceTree = "<group>"; };
 		7FBC23102760BD0B0066CEC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +80,7 @@
 		7FD13CA7276246B700AEDDA4 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		7FD13CA9276246C200AEDDA4 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 		7FD13CAD27624D2A00AEDDA4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		7FE32C7A27695A0B006CC8D2 /* Avis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avis.swift; sourceTree = "<group>"; };
 		7FEE6FD12762355400F0688D /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		7FEE6FD32762357E00F0688D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7FEE6FD52762359700F0688D /* GridDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridDestinations.swift; sourceTree = "<group>"; };
@@ -88,6 +110,48 @@
 			path = Modals;
 			sourceTree = "<group>";
 		};
+		7FB7DC2D276A769500AE6DC7 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				7FF2B6362763595A0081CB17 /* LocationItem.swift */,
+				7FB2A8412765486900D95770 /* ServiceItem.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		7FB7DC2E276A76A800AE6DC7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7F407E1A2767EA2600CE3709 /* RectangleItem.swift */,
+				7F19A5D727677DB800091CD6 /* MapHeader.swift */,
+				7F19A5D927677E3400091CD6 /* MapSuggestions.swift */,
+				7F55A9B6276A37BF002A8181 /* Sheet.swift */,
+				7F55A9B8276A3DA4002A8181 /* CallService.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		7FB7DC2F276A76D700AE6DC7 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				7F8796C42769F20F00B3D9C7 /* PostItem.swift */,
+				7FB7DC2B276A75B000AE6DC7 /* SecondPostItem.swift */,
+				7F927836276A1CBB005EA2CB /* ProfessionnalPostItem.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		7FB7DC30276A770300AE6DC7 /* Avis */ = {
+			isa = PBXGroup;
+			children = (
+				7F927832276A01E4005EA2CB /* Description.swift */,
+				7FE32C7A27695A0B006CC8D2 /* Avis.swift */,
+				7FA222052769DD5B00AA8A97 /* CommentItem.swift */,
+				7F927834276A15D8005EA2CB /* MessageIcon.swift */,
+			);
+			path = Avis;
+			sourceTree = "<group>";
+		};
 		7FBC23022760BD0B0066CEC8 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +175,7 @@
 				7F73EA98276345E6000DF03A /* Modals */,
 				7FD13CA327623F6300AEDDA4 /* Components */,
 				7FD13CA6276246AA00AEDDA4 /* Models */,
+				7F0ADF68276A4247007E53AC /* SeaSideIbiza.swift */,
 				7FB2A83F2765485700D95770 /* GridServices.swift */,
 				7F430619276793BE00D5A06A /* Chat.swift */,
 				7FEE6FD52762359700F0688D /* GridDestinations.swift */,
@@ -144,14 +209,22 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		7FC9B846276B710400BCDF10 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F2E5C11276B656400BDEDAF /* Register.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		7FD13CA327623F6300AEDDA4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				7F407E1A2767EA2600CE3709 /* RectangleItem.swift */,
-				7FF2B6362763595A0081CB17 /* LocationItem.swift */,
-				7FB2A8412765486900D95770 /* ServiceItem.swift */,
-				7F19A5D727677DB800091CD6 /* MapHeader.swift */,
-				7F19A5D927677E3400091CD6 /* MapSuggestions.swift */,
+				7FC9B846276B710400BCDF10 /* Profile */,
+				7FB7DC30276A770300AE6DC7 /* Avis */,
+				7FB7DC2F276A76D700AE6DC7 /* Feed */,
+				7FB7DC2E276A76A800AE6DC7 /* Map */,
+				7FB7DC2D276A769500AE6DC7 /* Grid */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -244,12 +317,20 @@
 				7F6B894C2767CF2A0014770F /* MapView.swift in Sources */,
 				7FEE6FD42762357E00F0688D /* Profile.swift in Sources */,
 				7FF2B6372763595A0081CB17 /* LocationItem.swift in Sources */,
+				7FB7DC2C276A75B000AE6DC7 /* SecondPostItem.swift in Sources */,
 				7FEE6FD22762355400F0688D /* Feed.swift in Sources */,
 				7FF2B635276352190081CB17 /* SearchLocationModal.swift in Sources */,
+				7F0ADF69276A4247007E53AC /* SeaSideIbiza.swift in Sources */,
+				7FE32C7B27695A0C006CC8D2 /* Avis.swift in Sources */,
 				7FD13CA127623E1300AEDDA4 /* Colors.swift in Sources */,
+				7F927835276A15D8005EA2CB /* MessageIcon.swift in Sources */,
+				7F927837276A1CBB005EA2CB /* ProfessionnalPostItem.swift in Sources */,
 				7FB2A844276549D500D95770 /* SearchServiceModal.swift in Sources */,
+				7F927833276A01E4005EA2CB /* Description.swift in Sources */,
+				7FA222062769DD5B00AA8A97 /* CommentItem.swift in Sources */,
 				7FEE6FD8276235C700F0688D /* LocationMap.swift in Sources */,
 				7FBC230F2760BD0B0066CEC8 /* carewegoApp.swift in Sources */,
+				7F8796C52769F20F00B3D9C7 /* PostItem.swift in Sources */,
 				7FB2A8402765485700D95770 /* GridServices.swift in Sources */,
 				7F6B894A2767CEEE0014770F /* Place.swift in Sources */,
 				7FEE6FD62762359700F0688D /* GridDestinations.swift in Sources */,
@@ -258,11 +339,14 @@
 				7FB2A8422765486900D95770 /* ServiceItem.swift in Sources */,
 				7F6B894E2767CF560014770F /* MapDisplay.swift in Sources */,
 				7F724C672762AECF009904BC /* Extensions.swift in Sources */,
+				7F2E5C12276B656400BDEDAF /* Register.swift in Sources */,
 				7FD13CA8276246B700AEDDA4 /* Enumerations.swift in Sources */,
 				7F19A5DC2767811C00091CD6 /* MapModal.swift in Sources */,
 				7F19A5D827677DB800091CD6 /* MapHeader.swift in Sources */,
 				7F6B89502767CF920014770F /* MapViewModel.swift in Sources */,
 				7F407E1B2767EA2600CE3709 /* RectangleItem.swift in Sources */,
+				7F55A9B7276A37BF002A8181 /* Sheet.swift in Sources */,
+				7F55A9B9276A3DA4002A8181 /* CallService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

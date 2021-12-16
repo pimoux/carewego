@@ -10,7 +10,7 @@ import SwiftUI
 struct GridServices: View {
     var place: String
     
-    @State private var searchCity: String = ""
+    @State private var searchServices: String = ""
     @State private var isOpen: Bool = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -18,6 +18,7 @@ struct GridServices: View {
         GridItem(.adaptive(minimum: 170)),
         GridItem(.adaptive(minimum: 170))
     ]
+    
     var body: some View {
             ScrollView {
                 VStack(alignment: .leading) {
@@ -28,15 +29,24 @@ struct GridServices: View {
                         .padding(.bottom, 1.0)
                     HStack {
                         Image(systemName: "magnifyingglass")
-                        TextField("Search", text: $searchCity)
+                        TextField("Search", text: $searchServices)
                     }
                     .padding(10)
                     .background(colorLightGrayField)
                     .cornerRadius(8)
                     Spacer()
                     LazyVGrid(columns: gridLayout, spacing: 8) {
-                        ForEach(Service.services) { service in
+                        ForEach(Service.services.filter({
+                        "\($0.type.description.lowercased())".contains(searchServices.lowercased()) ||
+                            searchServices.isEmpty
+                        })) { service in
+                            if service.type == .hotel {
+                                NavigationLink(destination: SeaSideIbiza()) {
+                                    ServiceItem(service: service)
+                                }
+                            } else {
                                 ServiceItem(service: service)
+                            }
                         }
                     }
                     .padding(.top, 20)
@@ -62,6 +72,7 @@ struct GridServices: View {
             }) {
                 Image(systemName: "arrow.uturn.backward")
             })
+            .background(whiteBackground)
     }
 }
 

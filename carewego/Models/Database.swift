@@ -12,8 +12,8 @@ var user1: User = User(
     username: "Institut Mckenzie",
     avatar: "mckenzie",
     isProfessionnal: true,
-    handicaps: nil,
-    savedPosts: nil,
+    handicaps: [],
+    savedPosts: [],
     savedUsers: [user3, user4, user6]
 )
 
@@ -22,8 +22,8 @@ var user2: User = User(
     username: "Annecy Rééducation",
     avatar: "annecy",
     isProfessionnal: true,
-    handicaps: nil,
-    savedPosts: nil,
+    handicaps: [],
+    savedPosts: [],
     savedUsers: [user4]
 )
 
@@ -42,7 +42,7 @@ var user4: User = User(
     username: "Pearesh Gari",
     avatar: "pearesh",
     isProfessionnal: false,
-    handicaps: [.béquilles, .autoimmune],
+    handicaps: [.béquilles, .autoimmune, .malentendant],
     savedPosts: [post4],
     savedUsers: [user2]
 )
@@ -52,9 +52,9 @@ var user5: User = User(
     username: "Steve Jobs",
     avatar: "jobs",
     isProfessionnal: true,
-    handicaps: nil,
+    handicaps: [],
     savedPosts: [post3],
-    savedUsers: nil
+    savedUsers: []
 )
 
 var user6: User = User(
@@ -62,9 +62,9 @@ var user6: User = User(
     username: "Hotel sea side",
     avatar: "hotelseaside",
     isProfessionnal: true,
-    handicaps: nil,
-    savedPosts: nil,
-    savedUsers: nil
+    handicaps: [],
+    savedPosts: [],
+    savedUsers: []
 )
 
 var user7: User = User(
@@ -72,8 +72,8 @@ var user7: User = User(
     username: "Hand'home",
     avatar: "handhome",
     isProfessionnal: true,
-    handicaps: nil,
-    savedPosts: nil,
+    handicaps: [],
+    savedPosts: [],
     savedUsers: [user4, user2]
 )
 
@@ -111,7 +111,7 @@ var post3: Post = Post(
     id: UUID(),
     user: user4,
     content: "Superbe service de la part de Annecy Rééducation ! ",
-    images: nil,
+    images: [],
     createdAt: Date(timeIntervalSinceNow: 60 * 60 * 24 * 45 * -1),
     likes: 843,
     comments: 145
@@ -161,16 +161,36 @@ var comment4: Comment = Comment(
     content: "Service restauration qui laisse à désirer. Nous avons attendu 30 minutes sans avoir été servi et sans avoir pris notre commande ! Une honte pour un établissement de ce standard."
 )
 
-var location1: Location = Location(id: UUID(), type: .ville, name: "San Francisco", image: "sanfrancisco")
-var location2: Location = Location(id: UUID(), type: .ville, name: "Ubud", image: "ubud")
-var location3: Location = Location(id: UUID(), type: .ville, name: "Cancun", image: "cancun")
-var location4: Location = Location(id: UUID(), type: .ville, name: "Cannes", image: "cannes")
-var location5: Location = Location(id: UUID(), type: .ville, name: "Ibiza", image: "ibiza")
-var location6: Location = Location(id: UUID(), type: .ville, name: "Istanbul", image: "istanbul")
-var location7: Location = Location(id: UUID(), type: .ville, name: "Maldives", image: "maldives")
-var location8: Location = Location(id: UUID(), type: .ville, name: "Sydney", image: "sydney")
-var location9: Location = Location(id: UUID(), type: .ville, name: "Petra", image: "petra")
-var location10: Location = Location(id: UUID(), type: .ville, name: "Shanghai", image: "shanghai")
+var location1: Location = Location(id: UUID(), type: .ville, supported: [.fauteuil, .fauteuilElectrique, .fauteuilElectriquePliable], name: "San Francisco", image: "sanfrancisco")
+var location2: Location = Location(id: UUID(), type: .ville, supported: [.béquilles], name: "Ubud", image: "ubud")
+var location3: Location = Location(id: UUID(), type: .ville, supported: [.déambulateur, .malentendant], name: "Cancun", image: "cancun")
+var location4: Location = Location(id: UUID(), type: .ville, supported: [.autisme, .malvoyant], name: "Cannes", image: "cannes")
+var location5: Location = Location(id: UUID(), type: .ville, supported: [.fauteuilElectriquePliable], name: "Ibiza", image: "ibiza")
+var location6: Location = Location(id: UUID(), type: .ville, supported: [.diabète, .grossesse, .pulmonaire], name: "Istanbul", image: "istanbul")
+var location7: Location = Location(id: UUID(), type: .ville, supported: [.malentendant, .fauteuilElectriquePliable], name: "Maldives", image: "maldives")
+var location8: Location = Location(id: UUID(), type: .ville, supported: [.pulmonaire, .cardiaque], name: "Sydney", image: "sydney")
+var location9: Location = Location(id: UUID(), type: .ville, supported: [.autoimmune, .troubleMentaux], name: "Petra", image: "petra")
+var location10: Location = Location(id: UUID(), type: .ville, supported: [], name: "Shanghai", image: "shanghai")
+
+var location11: Location = Location(id: UUID(), type: .pays, supported: [], name: "Brésil", image: "bresil")
+var location12: Location = Location(id: UUID(), type: .pays, supported: [], name: "Australie", image: "australie")
+var location13: Location = Location(id: UUID(), type: .pays, supported: [], name: "Italie", image: "italie")
+var location14: Location = Location(id: UUID(), type: .pays, supported: [], name: "Thailande", image: "thailande")
+var location15: Location = Location(id: UUID(), type: .pays, supported: [], name: "Espagne", image: "espagne")
+var location16: Location = Location(id: UUID(), type: .pays, supported: [], name: "Portugal", image: "portugal")
+var location17: Location = Location(id: UUID(), type: .pays, supported: [], name: "Indonésie", image: "indonesie")
+var location18: Location = Location(id: UUID(), type: .pays, supported: [], name: "France", image: "france")
+
+var location19: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Amérique du Nord", image: "ameriquedunord")
+var location20: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Asie", image: "asie")
+var location21: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Europe", image: "europe")
+var location22: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Océanie", image: "oceanie")
+var location23: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Orient", image: "orient")
+var location24: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Caraibes", image: "caraibes")
+var location25: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Grand Nord", image: "grandnord")
+var location26: Location = Location(id: UUID(), type: .horizon, supported: [], name: "Afrique", image: "afrique")
+
+
 
 var service1: Service = Service(
     id: UUID(),
@@ -178,7 +198,6 @@ var service1: Service = Service(
     images: ["transport"],
     location: location5,
     type: .transport,
-    handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 3
 )
 
@@ -188,7 +207,6 @@ var service2: Service = Service(
     images: ["Hotel"],
     location: location5,
     type: .hotel,
-    handicapAbilities: [.malentendant, .autoimmune, .cardiaque],
     rate: 4
 )
 
@@ -198,7 +216,6 @@ var service3: Service = Service(
     images: ["Bienetre"],
     location: location5,
     type: .bienEtre,
-    handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 5
 )
 
@@ -208,7 +225,6 @@ var service4: Service = Service(
     images: ["Sante"],
     location: location5,
     type: .sante,
-    handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .cardiaque, .autoimmune, .béquilles],
     rate: 5
 )
 
@@ -218,7 +234,6 @@ var service5: Service = Service(
     images: ["Aide a domicile"],
     location: location5,
     type: .aideDomicile,
-    handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 3
 )
 
@@ -228,17 +243,15 @@ var service6: Service = Service(
     images: ["Sejour"],
     location: location5,
     type: .sejour,
-    handicapAbilities: [.fauteuil, .fauteuilElectriquePliable, .malentendant],
     rate: 2
 )
 
 var service7: Service = Service(
     id: UUID(),
     name: "Activités",
-    images: ["Activite"],
+    images: ["Activite-winter"],
     location: location6,
     type: .activites,
-    handicapAbilities: [.grossesse, .diabète, .troubleMentaux],
     rate: 4
 )
 
@@ -249,7 +262,24 @@ var service8: Service = Service(
     images: ["Accompagnement"],
     location: location7,
     type: .accompagnement,
-    handicapAbilities: [.malvoyant,.autisme,.grossesse,.fauteuilElectrique,.cardiaque],
+    rate: 4
+)
+
+var service9: Service = Service(
+    id: UUID(),
+    name: "Collectivités",
+    images: ["Collectivite"],
+    location: location7,
+    type: .collectivites,
+    rate: 4
+)
+
+var service10: Service = Service(
+    id: UUID(),
+    name: "Associations",
+    images: ["Association"],
+    location: location7,
+    type: .accompagnement,
     rate: 4
 )
 
@@ -259,3 +289,19 @@ var message3: Message = Message(id: UUID(), user: user3, isLatestMessageSeen: tr
 var message4: Message = Message(id: UUID(), user: user4, isLatestMessageSeen: true, latestMessage: "En ligne")
 var message5: Message = Message(id: UUID(), user: user5, isLatestMessageSeen: true, latestMessage: "Bonne journée ! Il y a 4j")
 var message6: Message = Message(id: UUID(), user: user6, isLatestMessageSeen: true, latestMessage: "En ligne il y a 2h")
+
+var enregistrement1: register = register(
+    id: UUID(),
+    name: "Vous avez enregistré Sea Side Ibiza dans le tableau « Vacances 2022 »",
+    images: "HotelSeaSide2"
+)
+var enregistrement2: register = register(
+    id: UUID(),
+    name: "Vous avez enregistré Sonia Carighi dans contacts»",
+    images: "Simon & Natalia"
+)
+var enregistrement3: register = register(
+    id: UUID(),
+    name: "Vous avez récemment ajouter « Give a fork » sur la map»",
+    images: "Simon"
+)

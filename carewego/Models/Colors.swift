@@ -28,3 +28,5 @@ var colorLightGray2: Color = Color(red: 186/255, green: 186/255, blue: 186/255)
 var colorLightGrayField: Color = Color(red: 233/255, green: 233/255, blue: 234/255)
 var colorLightGrayTextField: Color = Color(red: 60/255, green: 60/255, blue: 66/255)
 var darkGray: Color = Color(red: 112/255, green: 112/255, blue: 112/255)
+
+var purple: Color = Color(red: 149/255, green: 142/255, blue: 225/255)

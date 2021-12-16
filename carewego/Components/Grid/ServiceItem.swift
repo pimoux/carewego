@@ -22,8 +22,8 @@ struct ServiceItem: View {
                                 .foregroundColor(.white)
                                 .font(.title2)
                                 .bold()
-                                .background(Rectangle().fill().opacity(0.5))
                                 .frame(maxWidth: .infinity, alignment: .center)
+                                .background(Rectangle().fill().cornerRadius(8, corners: [.bottomLeft, .bottomRight]).opacity(0.5))
                         }
                     )
                     .cornerRadius(8)

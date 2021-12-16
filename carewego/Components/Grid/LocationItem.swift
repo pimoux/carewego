@@ -13,7 +13,7 @@ struct LocationItem: View {
         ZStack(alignment: .bottom) {
             Image(location.image)
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .overlay(
                     VStack {
                         Spacer()
@@ -22,8 +22,8 @@ struct LocationItem: View {
                             .foregroundColor(.white)
                             .font(.title2)
                             .bold()
-                            .background(Rectangle().fill().cornerRadius(8).opacity(0.5))
                             .frame(maxWidth: .infinity, alignment: .center)
+                            .background(Rectangle().fill().cornerRadius(8, corners: [.bottomLeft, .bottomRight]).opacity(0.5))
                     }
                 )
                 .cornerRadius(8)

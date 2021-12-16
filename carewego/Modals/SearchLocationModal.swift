@@ -7,21 +7,38 @@
 
 import SwiftUI
 
+
+
 struct SearchLocationModal: View {
-    @Binding var searchLocation: SearchLocationType
-    
-    @State private var toggles: [Bool] = [true, false, false]
-    var filters: [SearchLocationType] = [.ville, .pays, .continent]
+    @Binding var searchMobility: [Handicap]
+    @State private var handicapToggles: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+    var handicapsFilter: [Handicap] = [.fauteuil, .fauteuilElectrique, .fauteuilElectriquePliable, .déambulateur, .malvoyant, .troubleMentaux, .diabète, .grossesse, .autisme, .malentendant, .pulmonaire, .autoimmune, .béquilles, .cardiaque]
     var body: some View {
         VStack {
-            List(filters, id: \.self) { place in
-                HStack {
-                    Toggle(isOn: $toggles[place.indexes]) {
-                        Text(place.description)
-                    }
-                    .toggleStyle(SwitchToggleStyle(tint: colorPrimary))
-                    .onChange(of: toggles[place.indexes]) { _ in
-                        searchLocation = place
+            List {
+                Section(header: Text("Mobilité")
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                            .font(.system(size: 26))
+                            .textCase(nil)
+                            .padding(.bottom, 2)
+                ) {
+                    ForEach(handicapsFilter, id: \.self) { mobility in
+                        HStack {
+                            Toggle(isOn: $handicapToggles[mobility.index]) {
+                                Text(mobility.description)
+                            }
+                            .toggleStyle(SwitchToggleStyle(tint: colorPrimary))
+                            .onChange(of: handicapToggles[mobility.index]) { _ in
+                                if handicapToggles[mobility.index] {
+                                    searchMobility.append(mobility)
+                                } else {
+                                    if let i = searchMobility.firstIndex(of: mobility) {
+                                        searchMobility.remove(at: i)
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -31,6 +48,6 @@ struct SearchLocationModal: View {
 
 struct SearchLocationModal_Previews: PreviewProvider {
     static var previews: some View {
-        SearchLocationModal(searchLocation: .constant(.ville))
+        SearchLocationModal(searchMobility: .constant([]))
     }
 }
